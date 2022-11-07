@@ -1,0 +1,107 @@
+@import "../css/general.css";
+@import "../css/navbar.css";
+@import "../css/footer.css";
+
+.post__heading {
+  margin-top: 4.8rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.post__heading--secondary {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.post__img {
+  margin-top: 2.4rem;
+  width: 90%;
+  object-fit: cover;
+}
+
+.post__content {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.post__paragraph {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.post__related {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+}
+.post__related-links {
+  line-height: 3rem;
+}
+.post__link:link,
+.post__link:visited {
+  text-decoration: none;
+  color: #7a1616;
+  font-weight: bold;
+}
+
+.post__link:hover,
+.post__link:active {
+  text-decoration: underline;
+}
+
+.author {
+  width: 100%;
+  margin-top: 2.4rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.author__image {
+  width: 25%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.author__intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.author__name {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+.author__name:hover {
+  color: #7a1616;
+  cursor: pointer;
+}
+.author__socials {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.social-icon {
+  width: 3rem;
+}
+
+.social-icon--linkedin {
+  fill: #0077b5;
+}
+
+@media (min-width: 768px) {
+  .author__intro {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .author__intro {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1440px) {
+  .author {
+    align-items: center;
+  }
+  .author__intro {
+    gap: 1.6rem;
+    line-height: 3.2rem;
+  }
+}

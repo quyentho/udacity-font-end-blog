@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-flow: wrap;
+
+  margin-top: auto;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.seperate-line {
+  margin-top: 1.6rem;
+  width: 100%;
+}
