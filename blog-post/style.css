@@ -63,6 +63,7 @@
 .author__intro {
   height: 100%;
   display: flex;
+  gap: 0.8rem;
   flex-direction: column;
 }
 .author__name {
@@ -77,6 +78,10 @@
   margin-top: 0.4rem;
   display: flex;
   gap: 1.2rem;
+}
+.author__favorite-quote {
+  padding: 1.2rem;
+  background-color: #e8eaed;
 }
 .social-icon {
   width: 3rem;
