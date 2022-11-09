@@ -17,6 +17,12 @@
   width: 90%;
   object-fit: cover;
 }
+.post__img-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-left: -2.4rem;
+}
 
 .post__content {
   margin-top: 2.4rem;
