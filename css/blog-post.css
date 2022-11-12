@@ -57,16 +57,21 @@
 .author {
   width: 100%;
   margin-top: 2.4rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% auto;
   gap: 1.6rem;
 }
 .author__image {
-  width: 25%;
+  justify-self: center;
+  grid-column: 1/-1;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  max-width: 20rem;
 }
 .author__intro {
+  grid-column: 1/-1;
   height: 100%;
   display: flex;
   gap: 0.8rem;
@@ -75,6 +80,8 @@
 .author__name {
   font-size: 3rem;
   margin-bottom: 0.8rem;
+  align-self: center;
+  text-align: center;
 }
 .author__name:hover {
   color: #7a1616;
@@ -84,17 +91,30 @@
   margin-top: 0.4rem;
   display: flex;
   gap: 1.2rem;
+  margin: 0 auto;
 }
 .author__favorite-quote {
   padding: 1.2rem;
   background-color: #e8eaed;
 }
 .social-icon {
-  width: 3rem;
+  width: 3.6rem;
 }
 
 .social-icon--linkedin {
   fill: #0077b5;
+}
+
+@media (min-width: 425px) {
+  .author__image {
+    grid-column: 1;
+    grid-row: 1/-1;
+    justify-self: start;
+    align-self: center;
+  }
+  .author__intro {
+    grid-column: 2;
+  }
 }
 
 @media (min-width: 768px) {
@@ -109,7 +129,11 @@
 }
 @media (min-width: 1440px) {
   .author {
+    grid-template-columns: 20% auto;
     align-items: center;
+  }
+  .author__image {
+    justify-self: center;
   }
   .author__intro {
     gap: 1.6rem;
